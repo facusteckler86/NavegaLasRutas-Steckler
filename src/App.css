@@ -72,20 +72,21 @@ body {
 
 .productCard p {
     margin: 10px 0;
-};
+}
 
 .homepage {
-    height: 100vh;
-    background-image: url('../src/assets/images/fondo\ de\ pantalla\ \(1\).jpg');
+    background-image: url("./assets/images/fondo_pantalla.jpg");
     background-size: cover;
     background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-repeat: no-repeat;
+    
 }
 
 .enter-button {
+    display: flex;
+    justify-content: flex-start;
+    align-content: space-around;
     padding: 10px 20px;
-    font-size: 20px;
+    font-size: 10px;
     cursor: pointer;
 }

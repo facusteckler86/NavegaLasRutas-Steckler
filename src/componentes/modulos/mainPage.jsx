@@ -1,13 +1,11 @@
-import ProductCard from "./productCard";
 
-const mainPage =() =>{
+const MainPage = () => {
     return (
-        <>
-            <navBar />
-            <ProductCard />
-            <itemListContainer />
-        </>
-    )
+        <div>
+            <h1>Panaderia Doña Pepa</h1>
+        </div>
+        
+    );
 }
 
-export default mainPage;
+export default MainPage;

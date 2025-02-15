@@ -1,5 +1,3 @@
-
-
 import PropTypes from 'prop-types';
 
 const ProductCard = ({ title, description, price, image, alt }) => {
