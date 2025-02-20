@@ -1,4 +1,5 @@
 import ProductCard from "./productCard";
+import "../../../src/App.css";
 
 const ItemListContainer = () => {
   return (
