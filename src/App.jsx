@@ -1,16 +1,18 @@
 import "./App.css";
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import HomePage from './componentes/Home/HomePage';
-import MainPage from './componentes/modulos/MainPage';
+import { Route, Routes, BrowserRouter } from "react-router-dom";
+import HomePage from "./componentes/Home/HomePage";
+import MainPage from "./componentes/modulos/mainPage";
+import Error from "./componentes/modulos/Error";
 
 const App = () => {
   return (
-      <Router>
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/main" element={<MainPage />} />
-        </Routes>
-      </Router>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/main" element={<MainPage />} />
+        <Route path="*" element={< Error/>} />
+      </Routes>
+    </BrowserRouter>
   );
 };
 

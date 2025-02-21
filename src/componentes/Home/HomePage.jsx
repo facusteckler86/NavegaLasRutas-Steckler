@@ -1,6 +1,8 @@
 import "../../../src/App.css";
 
 const HomePage = () => {
+    
+    
     return (
         <div className="homePage">
             <h1>Panaderia Doña Pepa.</h1>

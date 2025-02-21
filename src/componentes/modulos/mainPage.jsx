@@ -5,6 +5,7 @@ import { IoMdContact } from "react-icons/io";
 import { MdOutlineProductionQuantityLimits } from "react-icons/md";
 import { IoIosAlbums } from "react-icons/io";
 import "./itemListContainer"
+import ProductCard from "./productCard";
 
 
 const MainPage = () => {
@@ -33,6 +34,7 @@ const MainPage = () => {
               {/* Aca va el main de mi proyecto */}
                 <>
                 <itemListContainer />
+                <ProductCard />
                 </>
         </div>
     );

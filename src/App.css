@@ -84,6 +84,7 @@ body {
   
   .navbar-item {
     margin-right: 20px;
+    justify-content: space-around;
   }
   
   .navbar-item a {
@@ -94,5 +95,29 @@ body {
   
   .navbar-item a:hover {
     text-decoration: solid;
+  };
+
+  .mainPage {
+    background-image: "./assets/images/fondo_pantalla.jpg";
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vh;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-content: flex-start;
+
+  }
+
+  .error img{
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vh;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    
   }
   
