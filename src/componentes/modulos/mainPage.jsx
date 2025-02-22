@@ -4,8 +4,8 @@ import { IoMdExit } from "react-icons/io";
 import { IoMdContact } from "react-icons/io";
 import { MdOutlineProductionQuantityLimits } from "react-icons/md";
 import { IoIosAlbums } from "react-icons/io";
-import "./itemListContainer"
-import ProductCard from "./productCard";
+//import Productos from "./Productos";
+
 
 
 const MainPage = () => {
@@ -33,8 +33,9 @@ const MainPage = () => {
                 </>
               {/* Aca va el main de mi proyecto */}
                 <>
-                <itemListContainer />
-                <ProductCard />
+                
+                <h1>Holaaaa</h1>
+                
                 </>
         </div>
     );

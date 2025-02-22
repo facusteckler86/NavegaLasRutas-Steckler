@@ -19,31 +19,6 @@ body {
     align-items: flex-start;
 }
 
-.productCard {
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 20px;
-    margin: 10px;
-    text-align: center;
-    background-color: white;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    width: calc(25% - 40px); /* Ajusta el ancho de las tarjetas */
-}
-
-.productCard img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
-}
-
-.productCard h3 {
-    margin: 10px 0;
-}
-
-.productCard p {
-    margin: 10px 0;
-}
-
 .homepage {
     background-image: url("./assets/images/fondo_pantalla.jpg");
     background-size: cover;
@@ -119,5 +94,18 @@ body {
     justify-content: center;
     align-content: center;
     
+  };
+
+  .error Link {
+    display: flex;
+    justify-content: center;
+    align-content: flex-end;
+  };
+
+  .footer{
+    display: flex;
+    justify-content: end;
+    align-content: center;
+    background-color: rgb(142, 142, 218);
   }
   
