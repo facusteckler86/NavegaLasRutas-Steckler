@@ -29,9 +29,10 @@
 
 /* Parte del navBar*/
 
-.navbar {
-  background-color: #db4444;
-  padding: 10px;
+.superior {
+  background-color: #faefef;
+  padding: 5px;
+  margin: auto;
 }
 
 .navbar-menu {
@@ -79,7 +80,7 @@
   justify-content: center;
   align-content: center;
   background-color: rgb(142, 142, 218);
-  padding: 5%;
+  padding: 20px;
 }
 
 .galeria {
@@ -123,4 +124,6 @@
   justify-content: center;
   align-content: flex-start;
   text-align: center;
+  border-bottom: 2px solid #000; 
+  padding-bottom: 10px;
 }
