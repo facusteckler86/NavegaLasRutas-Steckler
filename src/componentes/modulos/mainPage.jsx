@@ -4,14 +4,15 @@ import { IoMdExit } from "react-icons/io";
 import { IoMdContact } from "react-icons/io";
 import { MdOutlineProductionQuantityLimits } from "react-icons/md";
 import { IoIosAlbums } from "react-icons/io";
-//import Productos from "./Productos";
+import Productos from "./Productos";
+
 
 
 
 const MainPage = () => {
     return (
         <div>
-            <h1>Panaderia Doña Pepa</h1>
+            <h1 className="homeTitle">Panaderia Doña Pepa</h1>
             <>
                  <ul className="navbar-menu">
                     <li  className="navbar-item">
@@ -34,7 +35,7 @@ const MainPage = () => {
               {/* Aca va el main de mi proyecto */}
                 <>
                 
-                <h1>Holaaaa</h1>
+                <Productos />
                 
                 </>
         </div>
@@ -43,3 +44,5 @@ const MainPage = () => {
 
 
 export default MainPage;
+
+

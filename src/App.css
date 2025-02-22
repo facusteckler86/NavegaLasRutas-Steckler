@@ -1,111 +1,126 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
-body {
-    display: flex;
-    height: 100vh;
-}
-
-.appContainer {
-    display: flex;
-    width: 100%;
-}
-
-.mainContent {
-    flex: 1;
-    padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: flex-start;
-}
+/* Parte del Home */
 
 .homepage {
-    background-image: url("./assets/images/fondo_pantalla.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    
-};
-
-.h1{
-    font-family: "Roboto Flex", sans-serif;
-    font-size: 50px;
-    display: flex;
-    justify-content: center;
-    align-content: flex-start;
+  background-image: url("./assets/images/fondo_pantalla.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
+.homeTitle {
+  font-family: "Roboto Flex", sans-serif;
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  align-content: flex-start;
+  text-align: center;
+}
 
 .enter-button {
-    display: flex;
-    justify-content: flex-start;
-    align-content: space-around;
-    padding: 10px 20px;
-    font-size: 10px;
-    cursor: pointer;
+  display: flex;
+  justify-content: flex-start;
+  align-content: space-around;
+  padding: 10px 20px;
+  font-size: 10px;
+  cursor: pointer;
 }
 
+/* Parte del navBar*/
+
 .navbar {
-    background-color: #db4444;
-    padding: 10px;
-  }
-  
-  .navbar-menu {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .navbar-item {
-    margin-right: 20px;
-    justify-content: space-around;
-  }
-  
-  .navbar-item a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  .navbar-item a:hover {
-    text-decoration: solid;
-  };
+  background-color: #db4444;
+  padding: 10px;
+}
 
-  .mainPage {
-    background-image: "./assets/images/fondo_pantalla.jpg";
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100vh;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-content: flex-start;
+.navbar-menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 
-  }
+.navbar-item {
+  margin-right: 20px;
+  justify-content: space-around;
+}
 
-  .error img{
+.navbar-item a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
 
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100vh;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    
-  };
+.navbar-item a:hover {
+  text-decoration: solid;
+}
 
-  .error Link {
-    display: flex;
-    justify-content: center;
-    align-content: flex-end;
-  };
+/* Main del proyecto*/
 
-  .footer{
-    display: flex;
-    justify-content: end;
-    align-content: center;
-    background-color: rgb(142, 142, 218);
-  }
-  
+.error img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vh;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.error Link {
+  display: flex;
+  justify-content: center;
+  align-content: flex-end;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background-color: rgb(142, 142, 218);
+  padding: 5%;
+}
+
+.galeria {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto;
+  justify-items: center;
+  align-items: center;
+  justify-content: baseline;
+}
+
+
+.article {
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  align-items: center;
+  width: 90%;
+  height: 90%;
+  text-align: center;
+  background-color: antiquewhite;
+  box-shadow: 15px 15px 15px black;
+}
+
+
+.img {
+  width: 70%;
+  height: 90%;
+  object-fit: fill;
+}
+
+
+.h5 {
+  font-size: 25px;
+}
+
+.productos-title{
+  font-family: "Roboto Flex", sans-serif;
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  align-content: flex-start;
+  text-align: center;
+}

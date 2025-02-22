@@ -5,8 +5,8 @@ import {Link} from "react-router-dom";
 const Productos = () => {
   return (
     <>
-      <h2>Productos</h2>
-      <div>
+      <h2 className="productos.title">Productos</h2>
+      <div className="galeria">
         {db.map((Productos) => {
           return (
                 <article key={Productos.id}>
