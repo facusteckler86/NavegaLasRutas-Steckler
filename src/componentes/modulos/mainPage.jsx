@@ -4,7 +4,7 @@ import "../../../src/App.css";
 //import { IoMdContact } from "react-icons/io";
 //import { MdOutlineProductionQuantityLimits } from "react-icons/md";
 //import { IoIosAlbums } from "react-icons/io";
-import Productos from "./productos";
+import Productos from "./Productos";
 //import { NavLink } from "react-router-dom";
 
 const MainPage = () => {

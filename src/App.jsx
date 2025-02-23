@@ -3,10 +3,11 @@ import { Route, Routes, BrowserRouter } from "react-router-dom";
 import HomePage from "./componentes/Home/HomePage";
 import MainPage from "./componentes/modulos/mainPage";
 import Error from "./componentes/modulos/Error";
-import Productos from "./componentes/modulos/productos";
-import DetalleProductos from "./componentes/modulos/DetalleProducto";
+import Productos from "./componentes/modulos/Productos";
 import { NavLink } from "react-router-dom";
 import { CarritoContext } from "./componentes/modulos/Context/CarritoContex";
+import DetalleProductos from "./componentes/modulos/DetalleProducto"
+import Carrito from "./componentes/modulos/Carrito"
 
 const App = () => {
   return (
@@ -44,6 +45,7 @@ const App = () => {
           <Route path="/" element={<HomePage />} />
           <Route path="/main" element={<MainPage />} />
           <Route path="/Productos" element={<Productos />} />
+          <Route path="/Carrito" element={<Carrito />} />
           <Route
             path="/Productos/: ProductosId"
             element={<DetalleProductos />}
