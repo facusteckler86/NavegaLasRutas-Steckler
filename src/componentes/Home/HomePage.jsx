@@ -4,7 +4,7 @@ const HomePage = () => {
     
     
     return (
-        <div className="homePage">
+        <div className="home-Page">
             <h1 className="homeTitle">Panaderia Doña Pepa.</h1>
             <button className="enter-button" onClick={() => window.location.href = "/main"}>
                 Bienvenidos

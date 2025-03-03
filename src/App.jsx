@@ -8,11 +8,13 @@ import { NavLink } from "react-router-dom";
 import { CarritoContext } from "./componentes/modulos/Context/CarritoContex";
 import DetalleProductos from "./componentes/modulos/DetalleProducto"
 import Carrito from "./componentes/modulos/Carrito"
+//import { collection } from "firebase/firestore";
 
 const App = () => {
   return (
     <BrowserRouter>
       <nav>
+        <div className="container">
         <div className="navbar-start">
           <NavLink
             to={`/Main`}
@@ -39,7 +41,11 @@ const App = () => {
             Salir
           </NavLink>
         </div>
+        </div>
       </nav>
+      
+      
+      
       <CarritoContext>
         <Routes>
           <Route path="/" element={<HomePage />} />
@@ -53,7 +59,7 @@ const App = () => {
           <Route path="*" element={<Error />} />
         </Routes>
       </CarritoContext>
-
+      
       <footer className="footer">
         <a href="https://www.linkedin.com/in/facundomsteckler/" target="_blank">
           facusteckler86
