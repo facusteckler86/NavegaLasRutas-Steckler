@@ -6,11 +6,11 @@ En este proyecto que es de una panaderia, es simil al que hice en el curso de Ja
 
 ##Intrucciones para Instalarlo.
 
-'''bash
+```bash
 
 git clone https://github.com/facusteckler86/NavegaLasRutas-Steckler.git
 
-'''
+```
 
 no hay que olvidarse de instalar los modulos con npm install
 
