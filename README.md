@@ -18,6 +18,9 @@ no hay que olvidarse de instalar los modulos con npm install
 
 1. Vite
 2. Firebase
+3. React Router para la navegacion
+4. React Icons
+5. Trate de utilizar Tailwind, pero en algunas partes me largo error.
 
 
 
