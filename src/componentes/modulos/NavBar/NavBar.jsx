@@ -1,7 +1,7 @@
 import { useContext } from "react";
-import "../../../src/App.css";
+import '../../../App.css';
 import { NavLink } from "react-router-dom";
-import { CarritoContext } from "./Context/CarritoContex";
+import { CarritoContext } from "../Context/CarritoContex";
 
 export const NavBar = () => {
 

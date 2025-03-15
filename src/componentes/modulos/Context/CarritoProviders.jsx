@@ -23,7 +23,6 @@ export const CarritoProvider = ({ children }) => {
                 if(item.id === action.payload && item.cantidad > 1) return {...item, cantidad: cant}
                 return item
             })
-                break;
             case '[CARRITO] Eliminar Compra':
                 return state.filter(compra => compra.id !== action.payload)
             default:

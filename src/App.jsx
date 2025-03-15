@@ -5,10 +5,9 @@ import MainPage from "./componentes/modulos/mainPage";
 import Error from "./componentes/modulos/Error";
 import Productos from "./componentes/modulos/Productos";
 import { NavLink } from "react-router-dom";
-import { CarritoContext } from "./componentes/modulos/Context/CarritoContex";
 import DetalleProductos from "./componentes/modulos/DetalleProducto"
 import Carrito from "./componentes/modulos/Carrito"
-//import { collection } from "firebase/firestore";
+import {CarritoContext} from "./componentes/modulos/Context/CarritoContex"
 
 const App = () => {
   return (
