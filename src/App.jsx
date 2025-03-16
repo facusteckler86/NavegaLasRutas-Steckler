@@ -6,7 +6,7 @@ import Error from "./componentes/modulos/Error";
 import Productos from "./componentes/modulos/Productos";
 import { NavLink } from "react-router-dom";
 import DetalleProductos from "./componentes/modulos/DetalleProducto"
-import Carrito from "./componentes/modulos/Carrito"
+import Cart from "./componentes/modulos/Cart/Cart"
 import {CarritoContext} from "./componentes/modulos/Context/CarritoContex"
 
 const App = () => {
@@ -28,7 +28,7 @@ const App = () => {
             Productos
           </NavLink>
           <NavLink
-            to={`/Carrito`}
+            to={`/Cart`}
             className={({ isActive }) => (isActive ? "ActiveOption" : "Option")}
           >
             Carrito
@@ -50,11 +50,8 @@ const App = () => {
           <Route path="/" element={<HomePage />} />
           <Route path="/main" element={<MainPage />} />
           <Route path="/Productos" element={<Productos />} />
-          <Route path="/Carrito" element={<Carrito />} />
-          <Route
-            path="/Productos/: ProductosId"
-            element={<DetalleProductos />}
-          />
+          <Route path="/Cart" element={<Cart />} />
+          <Route path="/Productos/: ProductosId"element={<DetalleProductos />}   /> 
           <Route path="*" element={<Error />} />
         </Routes>
       </CarritoContext>

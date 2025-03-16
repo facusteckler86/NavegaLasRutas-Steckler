@@ -1,0 +1,36 @@
+.item-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  margin: auto;
+  padding: 20px;
+  background-color: #fff;
+  color: #3a506b
+}
+
+.item-container h3{
+    width: 450px;
+    font-size: 20px;
+}
+
+.item-cantidad p, item-total-container p{
+    font-size: 20px;
+    width: 250px;
+}
+.item-total-container{
+    display: flex;
+    flex-direction: column;
+}
+.item-total-container p{
+    width: auto;
+}
+.item-total-container button{
+    font-size: 20px;
+    background-color: #fff;
+    border: 1px solid #3A506B;
+    color: #3A506B;
+    border-radius: 10px;
+    padding: 15px;
+    margin: auto;
+}

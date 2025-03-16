@@ -5,10 +5,11 @@ import { Link } from "react-router-dom";
 
 export const Cart = () => {
     const { cart, clearCart } = useContext(CartContext);
+    const total = cart.reduce((acc, item) => acc + item.price * item.quantity, 0);
 
     if(cart.length === 0) {
         return (
-            <div className="carro-vacio">
+            <div className="carrito-vacio">
                 <h2>Carrito de Compras</h2>
                 <p>El Carrito esta vacio.</p>
                 <Link clasName="boton vacio"  to="/Productos">Volver a la tienda</Link>
