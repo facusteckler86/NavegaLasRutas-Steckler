@@ -1,0 +1,21 @@
+.compra-completa p, .pantalla-de-carga p{
+    width: 90%;
+    color: #94E2FA;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'poppins';
+    padding: 35px;
+    border-radius: 25px;
+
+}
+
+.checkout-form{
+    text-align: center;
+    color: #ffff;
+    margin: 0;
+    font-size: 50px;
+    font-family: 'poppins';
+
+}
+
+    
