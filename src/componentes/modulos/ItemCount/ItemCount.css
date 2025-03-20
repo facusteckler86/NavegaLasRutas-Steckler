@@ -1,0 +1,24 @@
+.controls{
+    display: flex;
+    gap:50px;
+    justify-content: center;
+}
+.button-item-count{
+    height: 30px;
+    width: 30px;
+    margin: auto;
+    color: #2123F5;
+    border: 1px solid black;
+}
+.button-counter-container{
+    display: flex;
+}
+.button-agregar{
+    background-color: #2123F5;
+    color: white;
+    border: 1px solid #3a5068;
+    height: 30px;
+    width: 200px;
+    margin: auto;
+    cursor: pointer;
+}

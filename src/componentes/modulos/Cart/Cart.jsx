@@ -1,10 +1,10 @@
 import { useContext } from "react";
-import { CartContext } from "../../context/CartContext";
+import { CarritoContex } from "../Context/CarritoContex";
 import { CartItem } from "./CartItem";
 import { Link } from "react-router-dom";
 
 export const Cart = () => {
-    const { cart, clearCart } = useContext(CartContext);
+    const { cart, clearCart } = useContext(CarritoContex);
     const total = cart.reduce((acc, item) => acc + item.price * item.quantity, 0);
 
     if(cart.length === 0) {
@@ -29,5 +29,3 @@ return(
 </div>
 )
 }
-
-export default Cart;

@@ -1,0 +1,39 @@
+.cardItemDetail{
+    background-color: #EFA321;
+    padding: 30px;
+    border-radius: 15px;
+}
+.titleItemDetail{
+    text-align: center;
+    font-family: 'poppins';
+    padding: 15px;
+    background-color: #EDDC62;
+    width: 800px;
+    margin: 10px auto;
+    margin-bottom: 30px;
+    border-radius: 15px;
+}
+.mainItemDetail{
+    width: 70%;
+    margin: auto;
+}
+.imgContainerItemDetail{
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+}
+.sectionItemDetail{
+    width: 700px;
+    height: 100%;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    border-radius: 15px;
+}
+.infoItemDetail{
+    font-size: 20px;
+    font-family: 'poppins';
+    text-align: center;
+}
