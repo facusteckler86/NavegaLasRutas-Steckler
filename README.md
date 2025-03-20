@@ -14,7 +14,11 @@ git clone https://github.com/facusteckler86/NavegaLasRutas-Steckler.git
 
 No hay que olvidarse de instalar los modulos con: 
 
+<<<<<<< HEAD
 
+=======
+[!ALERT]
+>>>>>>> dfaeaf729f7843a0bc4ad02a5cea7cbde7025429
 
 No hay que olvidarse de instalar los modulos con 
 
