@@ -14,9 +14,15 @@ git clone https://github.com/facusteckler86/NavegaLasRutas-Steckler.git
 
 No hay que olvidarse de instalar los modulos con: 
 
+[!important]
+
+No hay que olvidarse de instalar los modulos con 
+
 ```bash
- npm install;
- ```
+
+npm install
+
+```
 
  El deploy está realizado en Vercel, al final está el link. 
 
