@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+.form-checkout{
+    margin: auto;
+}
+
+.form-checkout label{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    font-size: 25px;
+    margin-top: 25px;
+    font-family: 'Poppins';
+    text-align: center;
+    color: #ffff;
+}
+
+.form-checkout label input{
+  padding: 10px;
+}
+
+.form-checkout-button{
+    margin: auto;
+}
+
+.form-checkout-button container{
+    display: flex;
+}
+
+.form-checkout-button{
+    width: 400px;
+    background-color: #ffff;
+    margin-top: 20px;
+    padding: 10px;
+    font-family: 'Poppins';
+    font-size: 15px;
+    border: 1px solid #000;
+}
