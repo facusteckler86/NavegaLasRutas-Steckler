@@ -1,15 +1,15 @@
 import { useContext, useState } from "react";
-import { CartContext } from "../../../context/CartContext";
-import { db } from "../../../firebase";
+import { CarritoContext } from "../Context/CarritoContex";
+import { db } from "../../firebase";
 import { addDoc, collection, getDocs, query, Timestamp, where, writeBatch } from "@firebase/firestore";
-import CheckoutForm from "./CheckoutForm"; 
+import {CheckoutForm} from "../CheckoutForm/Checkoutfomr"; 
 import "./Checkout.css";
 
 export const Checkout = () => {
   const [loading, setLoading] = useState(false);
   const [orderId, setOrderId] = useState("");
 
-  const { cart, total, clearCart } = useContext(CartContext);
+  const { cart, total, clearCart } = useContext(CarritoContext);
 
   const CreateOrder = async ({ name, mail }) => {
     if (!name || !mail) {
@@ -41,7 +41,7 @@ export const Checkout = () => {
         const product = doc.data();
         const item = cart.find((item) => item.id === doc.id);
 
-        if (!item) return; // Validación para evitar errores si no encuentra el producto.
+        if (!item) return; 
 
         if (product.stock >= item.quantity) {
           batch.update(doc.ref, { stock: product.stock - item.quantity });

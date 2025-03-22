@@ -36,3 +36,5 @@ export const CheckoutForm = ({ onConfirm }) => {
 
     )
 };
+
+export default CheckoutForm

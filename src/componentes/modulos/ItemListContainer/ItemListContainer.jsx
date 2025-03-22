@@ -1,13 +1,13 @@
 import { useEffect, useState } from "react";
 import { ItemList } from "../ItemList/ItemList";
-import { db } from "../../../firebase/firebaseConfig";
-import { collection, getDocs, query, where } from "firebase/firestore";
+import { db } from "../../firebase/firebaseConfig";
+import { collection, getDocs, query, where } from "../..firebase/firestore";
 import { useParams } from "react-router-dom";
 import "./ItemListContainer.css";
 
 
 // eslint-disable-next-line react/prop-types
-export const ItemListContainer = ({greeting}) => {
+const ItemListContainer = ({greeting}) => {
 
     const [products, setProducts] = useState([]);
     const {categoryId} = useParams();
@@ -42,3 +42,4 @@ export const ItemListContainer = ({greeting}) => {
     )
 
 }
+export default ItemListContainer

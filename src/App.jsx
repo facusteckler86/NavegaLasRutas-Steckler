@@ -1,11 +1,11 @@
 import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { CarritoProvider } from "./context/CarritoContext";
-import { NavBar } from "./components/NavBar";
-import { ItemListContainer } from "./components/ItemListContainer";
-import { Cart } from "./components/Cart";
-import { Error } from "./components/Error";
-import { Checkout } from "./components/Checkout";
+import { CarritoProvider } from "../src/componentes/modulos/Context/CarritoProviders";
+import { NavBar } from "./componentes/modulos/NavBar/NavBar";
+import { ItemListContainer } from "./componentes/modulos/ItemListContainer/ItemListContainer";
+import { Cart } from "./componentes/modulos/Cart/Cart";
+import { Error } from "./componentes/modulos/Error";
+import { Checkout } from "./componentes/modulos/CheckOut/Checkout";
 
 
 export function App () {
