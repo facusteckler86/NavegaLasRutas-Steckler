@@ -1,27 +1,27 @@
 /* eslint-disable react/prop-types */
 import { useEffect, useState } from 'react'
-import { ProductosContext } from './ProductosContext'
+import { productsContext } from './productsContext'
 
 
-export const ProductosProvider = ({ children }) => {
+export const productsProvider = ({ children }) => {
 
-    const [productos, setProductos] = useState([])
+    const [products, setproducts] = useState([])
 
-    const fetchProductos = async () => {
+    const fetchproducts = async () => {
         const response = await fetch('../../../db.js')
         const data = await response.json()
         console.log(data)
-        setProductos(data)
+        setproducts(data)
     }
 
     useEffect(() => {
-        fetchProductos()
+        fetchproducts()
 
     }, [])
 
     return (
-        <ProductosContext.Provider value={{productos}}>
+        <productsContext.Provider value={{products}}>
             {children}
-        </ProductosContext.Provider>
+        </productsContext.Provider>
     )
 }

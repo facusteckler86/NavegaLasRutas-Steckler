@@ -1,5 +1,5 @@
 import "../../../src/App.css";
-import Productos from "./Productos";
+import products from "./products";
 
 const MainPage = () => {
   return (
@@ -7,7 +7,7 @@ const MainPage = () => {
       <h1 className="homeTitle">Panaderia Doña Pepa</h1>
 
       <>
-        <Productos />
+        <products />
       </>
     </div>
   );

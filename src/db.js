@@ -1,4 +1,4 @@
-// Data base de productos
+// Data base de products
 
 const data = [
     {

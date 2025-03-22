@@ -1,4 +1,4 @@
-/* Carro con productos*/
+/* Carro con products*/
 
 .carrito-lleno-container{
     display: flex;
@@ -34,7 +34,7 @@
     margin-left: 50px;
 }
 
-/* Carro sin productos */
+/* Carro sin products */
 
 .carrito-vacio-container{
     display: flex;

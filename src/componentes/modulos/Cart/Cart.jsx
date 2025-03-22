@@ -12,7 +12,7 @@ export const Cart = () => {
             <div className="carrito-vacio">
                 <h2>Carrito de Compras</h2>
                 <p>El Carrito esta vacio.</p>
-                <Link clasName="boton vacio"  to="/Productos">Volver a la tienda</Link>
+                <Link clasName="boton vacio"  to="/products">Volver a la tienda</Link>
             </div>
         );
     }

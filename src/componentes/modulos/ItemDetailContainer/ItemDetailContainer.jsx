@@ -7,11 +7,11 @@ import "./ItemDetailContainer.css";
 
 export const ItemDetailContainer = () => {
   const [product, setProduct] = useState(null);
-  const [loading, setLoading] = useState(true); // Para manejar el estado de carga
+  const [loading, setLoading] = useState(true); 
   const { itemId } = useParams();
 
   useEffect(() => {
-    const docRef = doc(db, "productos", itemId);
+    const docRef = doc(db, "products", itemId);
 
     getDoc(docRef)
       .then((doc) => {
@@ -27,7 +27,7 @@ export const ItemDetailContainer = () => {
         console.log("Error al obtener el producto:", error);
       })
       .finally(() => {
-        setLoading(false); // Finaliza el estado de carga
+        setLoading(false); 
       });
   }, [itemId]);
 
