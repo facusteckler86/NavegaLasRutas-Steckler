@@ -6,6 +6,7 @@ import { ItemListContainer } from "./componentes/modulos/ItemListContainer/ItemL
 import { Cart } from "./componentes/modulos/Cart/Cart";
 import { Error } from "./componentes/modulos/Error";
 import { Checkout } from "./componentes/modulos/CheckOut/Checkout";
+import{HomePage} from "../src/componentes/Home/HomePage"
 
 
 export function App () {
@@ -17,7 +18,8 @@ export function App () {
       <CarritoProvider>
         <NavBar />
         <Routes>
-          <Route path="/" element={<ItemListContainer/>} />
+          <Route path="/" element={HomePage}/>
+          <Route path="//" element={<ItemListContainer/>} />
           <Route path="/category/:categoryId" element={<ItemListContainer />} />
           <Route path="/item/:itemId" element={<ItemListContainer />} />
           <Route path="/cart" element={<Cart />} />

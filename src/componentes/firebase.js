@@ -13,11 +13,12 @@ const firebaseConfig = {
   measurementId: "G-M4HG6RN45W",
 };
 
-const app = initializeApp(firebaseConfig);
+
 // eslint-disable-next-line no-unused-vars
 const analytics = getAnalytics(app);
 
-const db = getFirestore(app);
+const app = initializeApp(firebaseConfig);
+export const db = getFirestore(app);
 
 export async function getItems() {
   const querysnapshot = await getDocs(collection(db, "items"));

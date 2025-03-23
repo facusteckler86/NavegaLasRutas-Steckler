@@ -1,15 +1,15 @@
 import { useContext, useState } from "react";
-import { CarritoContext } from "../Context/CarritoContex";
+import { CarritoContextt } from "../Context/CarritoContext";
 import { db } from "../../firebase";
 import { addDoc, collection, getDocs, query, Timestamp, where, writeBatch } from "@firebase/firestore";
-import {CheckoutForm} from "../CheckoutForm/Checkoutfomr"; 
+import {CheckoutForm} from "../CheckoutForm/Checkoutform"; 
 import "./Checkout.css";
 
 export const Checkout = () => {
   const [loading, setLoading] = useState(false);
   const [orderId, setOrderId] = useState("");
 
-  const { cart, total, clearCart } = useContext(CarritoContext);
+  const { cart, total, clearCart } = useContext(CarritoContextt);
 
   const CreateOrder = async ({ name, mail }) => {
     if (!name || !mail) {

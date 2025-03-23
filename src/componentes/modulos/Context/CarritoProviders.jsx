@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import { useReducer } from 'react'
-import { CarritoContext } from './CarritoContex'
+import { CarritoContextt } from './CarritoContext'
 
 
 const initialState = []
@@ -72,8 +72,8 @@ export const CarritoProvider = ({ children }) => {
 
     return (
 
-        <CarritoContext.Provider value={{listaCompras, agregarCompra, aumentarCantidad, disminuirCantidad, eliminarCompra }}>
+        <CarritoContextt.Provider value={{listaCompras, agregarCompra, aumentarCantidad, disminuirCantidad, eliminarCompra }}>
             {children}
-        </CarritoContext.Provider>
+        </CarritoContextt.Provider>
     )
 }

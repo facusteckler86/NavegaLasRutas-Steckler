@@ -1,11 +1,11 @@
 import { useContext } from "react"
 import {FaBagShopping} from "react-icons/fa"
-import { CartContext } from "../../context/CartContext"
+import { CarritoContext } from "../../context/CarritoContext"
 import "./CartWidget.css"
 
 
 export const CartWidget = ()=>{
-    const {totalQuantity} = useContext(CartContext)
+    const {totalQuantity} = useContext(CarritoContext)
 
     return(
         <link to="/Cart" className="cartWidget" style={{
