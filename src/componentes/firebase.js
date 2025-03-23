@@ -17,10 +17,10 @@ const app = initializeApp(firebaseConfig);
 // eslint-disable-next-line no-unused-vars
 const analytics = getAnalytics(app);
 
-const dataBase = getFirestore(app);
+const db = getFirestore(app);
 
 export async function getItems() {
-  const querysnapshot = await getDocs(collection(dataBase, "items"));
+  const querysnapshot = await getDocs(collection(db, "items"));
   querysnapshot.forEach((doc) => {
     `${doc.id} => ${doc.data()}`;
   });
