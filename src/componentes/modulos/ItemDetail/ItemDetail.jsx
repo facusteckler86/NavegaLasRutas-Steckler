@@ -1,5 +1,5 @@
 import { useContext, useState } from "react";
-import { CarritoContext } from "../../context/CarritoContext";
+import { CarritoContext } from "../Context/CarritoContex";
 import { ItemCount } from "../ItemCount/ItemCount";
 import "./ItemDetail.css";
 import { Link } from "react-router-dom";
@@ -32,8 +32,7 @@ export const ItemDetail = ({ id, title, image, description, price, stock }) => {
 
           <footer>
             {
-              // eslint-disable-next-line no-undef
-              quantityAdded > 0 ? (
+              quantity > 0 ? (
                 <Link to="/Cart" className="Option">
                   Finalizar la Compra
                 </Link>

@@ -2,18 +2,20 @@ import { useContext, useState } from "react";
 import { CarritoContextt } from "../Context/CarritoContext";
 import { db } from "../../firebase";
 import { addDoc, collection, getDocs, query, Timestamp, where, writeBatch } from "@firebase/firestore";
-import {CheckoutForm} from "../CheckoutForm/Checkoutform"; 
-import "./Checkout.css";
+import { CheckoutForm } from "../CheckoutForm/CheckoutForm"; // Fixed casing
 
 export const Checkout = () => {
   const [loading, setLoading] = useState(false);
   const [orderId, setOrderId] = useState("");
+  const [ setError] = useState(null); // Added error state
 
   const { cart, total, clearCart } = useContext(CarritoContextt);
 
-  const CreateOrder = async ({ name, mail }) => {
-    if (!name || !mail) {
-      console.log("Faltan datos del comprador");
+  const createOrder = async ({ name, email }) => { // Changed to camelCase
+    setError(null); // Reset error state
+    
+    if (!name || !email) {
+      setError("Please fill in all required fields");
       return;
     }
 
@@ -23,7 +25,7 @@ export const Checkout = () => {
       const objOrder = {
         buyer: {
           name,
-          mail,
+          email,
         },
         items: cart,
         total: total,
@@ -80,7 +82,7 @@ export const Checkout = () => {
   return (
     <div className="checkout-form">
       <h2>Checkout</h2>
-      <CheckoutForm onConfirm={CreateOrder} />
+      <CheckoutForm onConfirm={createOrder} />
     </div>
   );
 };

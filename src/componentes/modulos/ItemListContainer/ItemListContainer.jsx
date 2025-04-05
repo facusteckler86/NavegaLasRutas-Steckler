@@ -10,13 +10,13 @@ import "./ItemListContainer.css";
 const ItemListContainer = ({greeting}) => {
 
     const [products, setProducts] = useState([]);
-    const {categoryId} = useParams();
+    const {CategoryId} = useParams();
 
     useEffect(() => {
 
         
-        const collectionRef = categoryId
-        ? query(collection(db, "products"), where ("categoryId", "==", categoryId))
+        const collectionRef = CategoryId
+        ? query(collection(db, "products"), where ("Category", "==", CategoryId))
         : collection(db, "products");
 
         getDocs(collectionRef).then(response =>{
@@ -31,7 +31,7 @@ const ItemListContainer = ({greeting}) => {
         })
     }, 
     
-    [categoryId]);
+    [CategoryId]);
 
     return(
         <div className="itemListContainer">

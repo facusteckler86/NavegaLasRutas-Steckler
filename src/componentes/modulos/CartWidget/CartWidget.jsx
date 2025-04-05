@@ -1,6 +1,6 @@
 import { useContext } from "react"
 import {FaBagShopping} from "react-icons/fa"
-import { CarritoContext } from "../../context/CarritoContext"
+import { CarritoContext } from "../Context/CarritoContex"
 import "./CartWidget.css"
 
 
