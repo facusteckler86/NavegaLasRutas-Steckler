@@ -1,5 +1,5 @@
 import { useContext, useState } from "react";
-import { CarritoContextt } from "../Context/CarritoContext";
+import { CarritoProvider } from "../Context/CarritoProviders";
 import { db } from "../../firebase";
 import { addDoc, collection, getDocs, query, Timestamp, where, writeBatch } from "@firebase/firestore";
 import { CheckoutForm } from "../CheckoutForm/CheckoutForm"; // Fixed casing
@@ -9,7 +9,7 @@ export const Checkout = () => {
   const [orderId, setOrderId] = useState("");
   const [ setError] = useState(null); // Added error state
 
-  const { cart, total, clearCart } = useContext(CarritoContextt);
+  const { cart, total, clearCart } = useContext(CarritoProvider);
 
   const createOrder = async ({ name, email }) => { // Changed to camelCase
     setError(null); // Reset error state
