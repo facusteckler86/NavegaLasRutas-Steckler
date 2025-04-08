@@ -3,10 +3,11 @@ import "./Cart.css";
 //import { useNavigate } from "react-router-dom";
 import { CartItem } from "../CartItem/CartItem";
 import { Link } from "react-router-dom";
-import { CarritoProvider } from "../Context/CarritoProviders";
+//import { CarritoProvider } from "../Context/CarritoProviders";
+import { CarritoContext } from "../Context/CarritoContex";
 
 export const Cart = () => {
-    const { listaCompras: cart, clearCart } = useContext(CarritoProvider);
+    const { listaCompras: cart, clearCart } = useContext(CarritoContext);
     const total = cart.reduce((acc, item) => acc + item.precio * item.cantidad, 0);
 
     if(cart.length === 0) {

@@ -1,6 +1,4 @@
 import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
-
 import { getFirestore, getDocs, collection } from "firebase/firestore";
 
 const firebaseConfig = {
@@ -13,18 +11,15 @@ const firebaseConfig = {
   measurementId: "G-M4HG6RN45W",
 };
 
-
-// eslint-disable-next-line no-unused-vars
-const analytics = getAnalytics(app);
-
+// Initialize Firebase App
 const app = initializeApp(firebaseConfig);
+
+// Initialize Firestore
 export const db = getFirestore(app);
 
+// Get items
 export async function getItems() {
   const querysnapshot = await getDocs(collection(db, "items"));
-  querysnapshot.forEach((doc) => {
-    `${doc.id} => ${doc.data()}`;
-  });
   return querysnapshot.docs.map((doc) => doc.data());
 }
 

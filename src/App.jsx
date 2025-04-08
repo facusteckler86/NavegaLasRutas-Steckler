@@ -15,7 +15,7 @@ export function App() {
         <CarritoProvider>
           <NavBar />
           <Routes>
-            <Route path="/" element={HomePage} />
+            <Route path="/" element={<HomePage />} /> 
             <Route path="//" element={<ItemListContainer />} />
             <Route
               path="/category/:categoryId"
@@ -33,3 +33,4 @@ export function App() {
 }
 
 export default App;
+

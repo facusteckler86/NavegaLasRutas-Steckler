@@ -1,11 +1,12 @@
 import {useContext} from 'react'
-import {CarritoProvider} from '../../modulos/Context/CarritoProviders'
+//import {CarritoProvider} from '../../modulos/Context/CarritoProviders'
 import './CartItem.css'
+import { CarritoContext } from '../Context/CarritoContex'
 
 
 export const CartItem = (item) => {
 
-    const {removeItem} = useContext(CarritoProvider)
+    const {removeItem} = useContext(CarritoContext)
 
     return(
         <div className="item-container">
