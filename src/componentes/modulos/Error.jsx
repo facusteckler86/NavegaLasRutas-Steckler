@@ -1,7 +1,7 @@
 import "../../../src/App.css"
 import {Link} from "react-router-dom";
 
-const Error = () =>{
+export const Error = () =>{
 
     return(
         <>
@@ -13,4 +13,3 @@ const Error = () =>{
     )
 }
 
-export default Error;

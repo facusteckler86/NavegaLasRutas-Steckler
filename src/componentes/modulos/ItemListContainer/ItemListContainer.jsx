@@ -7,7 +7,7 @@ import "./ItemListContainer.css";
 
 
 // eslint-disable-next-line react/prop-types
-const ItemListContainer = ({greeting}) => {
+export const ItemListContainer = ({greeting}) => {
 
     const [products, setProducts] = useState([]);
     const {CategoryId} = useParams();
@@ -42,4 +42,3 @@ const ItemListContainer = ({greeting}) => {
     )
 
 }
-export default ItemListContainer
